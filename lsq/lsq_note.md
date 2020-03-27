@@ -35,6 +35,8 @@
 
 - [27个常用的 Linux 命令 - 简书](https://www.jianshu.com/p/0056d671ea6d)
 
+- [Ranger 用法总结 | 盼 の 欲](http://www.huangpan.net/posts/ji-ke/2019-08-21-ranger.html)
+
 - `sudo su -`
 
 ## tf环境搭建
@@ -58,7 +60,9 @@
     - 更新bashrc以立即生效:`$ source ~/.bashrc`
   - 检验:`conda --version`
   - [Conda常用命令整理\_运维\_Working. Playing.-CSDN博客](https://blog.csdn.net/menc15/article/details/71477949)
-  - （已经安装好了现成环境py36_tfgpu，拷贝为lsq_py36_tfgpu）`conda create --name lsq_py36_tfgpu --clone py36_tfgpu`
+
+- （已经安装好了现成环境py36_tfgpu，拷贝为lsq_py36_tfgpu）`conda create --name lsq_py36_tfgpu --clone py36_tfgpu`
+- `conda activate lsq_py36_tfgpu`
 
 - [Install TensorFlow 2](https://tensorflow.google.cn/install)
   - 检验安装
