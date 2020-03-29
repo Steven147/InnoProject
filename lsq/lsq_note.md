@@ -2,6 +2,18 @@
 
 [本文链接InnoProject/lsq\_note.md](https://github.com/Steven147/InnoProject/blob/master/lsq/lsq_note.md)
 
+## 连接综述
+
+- termius
+  - `sudo su -`
+  - zft13917331612
+  - `conda activate lsq_py36_tfgpu`
+  - `jupyter notebook --no-browser --port=8889 --allow-root --certfile=mycert.pem --keyfile mykey.key`
+- terminal
+  - `ssh -N -f -L localhost:8888:localhost:8889 -p 10151 ipp20aitrojan@202.120.39.26`
+  - zft13917331612
+- [localhost](https://localhost:8888/)
+
 ## SSH远程连接
 
 - Linux/MacOS 作为终端
@@ -27,8 +39,7 @@
     - 输入密码:`zft13917331612`
   - 新建conda环境（python3），在新环境里下载jupyter notebook：`pip install notebook`
   - 配置jupyter环境（省略，因为已经配好了）
-  - jupyter notebook --no-browser --port=8889 --allow-root --certfile=mycert.pem --keyfile mykey.key
-
+  - `jupyter notebook --no-browser --port=8889 --allow-root --certfile=mycert.pem --keyfile mykey.key`
 - 用网页打开链接[localhost](https://localhost:8888/)
 
 ## Linux 基本使用
