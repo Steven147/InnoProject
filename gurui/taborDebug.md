@@ -5,7 +5,7 @@
     python3 tabor/train_badnet.py --train --poison-type FF --poison-loc TL --poison-size 8 --epochs 10 --display
    ```
     报错信息：
-    ```
+    ```shell
     File "tabor/train_badnet.py", line 98, in <module>
     display=args.display)
     File "tabor/train_badnet.py", line 65, in train
@@ -39,14 +39,14 @@
     python3 tabor/snooper.py --checkpoint output/badnet-FF-10-0.97.hdf5
    ```
     注意这里的文件名是根据上一步生成的文件名来的。这里有一个小问题，跑了10个epochs以后为什么会这个亚子
-    ```
+    ```shell
     (gr_py36_tf1.10) [root@localhost output]# ls
       badnet-FF-01-0.95.hdf5  badnet-FF-02-0.96.hdf5  badnet-FF-06-0.97.hdf5  badnet-FF-08-0.98.hdf5
       badnet-FF-01-0.96.hdf5  badnet-FF-02-0.97.hdf5  badnet-FF-07-0.98.hdf5
     ```
 
     运行tabor的snooper.py，试了一下用tf_1.14和keras==2.2.5就不可以了，报错信息：
-```
+```shell
 Load train images: 100%|████████████████| 30869/30869 [00:05<00:00, 5326.65it/s]
 Load test images: 100%|███████████████████| 8340/8340 [00:01<00:00, 5298.69it/s]
 Processed 39209 annotations
@@ -94,7 +94,7 @@ tensorflow.python.framework.errors_impl.InvalidArgumentError: Incompatible shape
 搜了一下github上发现还是tf和keras版本问题，于是降级成tf1.10和keras2.2.2
 
 用这个版本跑的时候下午是跑过了那个
-```
+```shell
 Load train images: 100%|████████████████| 30869/30869 [00:05<00:00, 5326.65it/s]
 Load test images: 100%|███████████████████| 8340/8340 [00:01<00:00, 5298.69it/s]
 Processed 39209 annotations
@@ -109,7 +109,7 @@ pattern_tanh -4.097944009900335 3.36882482659644
 这里的1226个item跑了差不多20分钟，但是后面还是会报错（···
 
 晚上的时候再试了一下，发现1226个item也跑不动了，直接会报错
-```
+```shell
 (gr_py36_tf1.10) [root@localhost TABOR]# python3 tabor/snooper.py --checkpoint output/badnet-FF-08-0.98.hdf5
 Traceback (most recent call last):
   File "/opt/anaconda3/lib/python3.7/site-packages/tensorflow-1.13.1-py3.7-linux-x86_64.egg/tensorflow/python/pywrap_tensorflow.py", line 58, in <module>
@@ -161,7 +161,7 @@ above this error message when asking for help.
 
 ---
 4-8更新：用tensorflow==1.10 keras==2.2.2，跑过了snoop函数的主循环，但还是会报一些错，信息如下:
-```
+```shell
 30869 Train examples
 8340 Test examples
 8340/39209 = 0.21
