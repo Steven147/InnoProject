@@ -1,6 +1,9 @@
 # TABOR Debug
 
+> 4-24更新：能够运行主循环了
+
 1. 木马植入。运行train_badnet.py
+
    ```shell
     python3 tabor/train_badnet.py --train --poison-type FF --poison-loc TL --poison-size 8 --epochs 10 --display
    ```
@@ -27,7 +30,7 @@
     File "/opt/anaconda3/envs/gr_py36/lib/python3.6/site-packages/tensorflow_core/python/keras/callbacks.py", line 1020, in _get_file_path
     return self.filepath.format(epoch=epoch + 1, **logs)
     KeyError: 'val_acc'
-
+   
     ```
     解决：报`keyError`,说明是keras版本的问题。老版本的keras用的是acc，新版本用的是accuracy。把`val_acc`和`acc`改成`val_accuracy`和`accuracy`即可，这样就可以过回调函数
 
@@ -185,3 +188,24 @@ tensorflow.python.framework.errors_impl.InvalidArgumentError: Incompatible shape
 (gr_py36_tf1.10) [root@localhost TABOR]# 
 
 ```
+
+---
+
+4.24更新：报错的解决方案：跑过了主循环
+
+```shell
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Incompatible shapes: [9,43] vs. [32,43]
+	 [[Node: mul_3 = _MklMul[T=DT_FLOAT, _kernel="MklOp", _device="/job:localhost/replica:0/task:0/device:CPU:0"](sequential/dense/Softmax, Log, sequential/dense/Softmax:1, DMT/_88)]]
+```
+
+报这个错是因为前面snooper.py里面，`Y_batch.shape[0]`一般是32，但是最后一个是9，所以运行到最后一个的时候会报错。这里直接改成
+
+```python
+for idx in trange(ceil(len(x)/32)-1):#调小batch，把Y_batch.shape[0]为9的剔除
+```
+
+就可以了。
+
+然而跑的很慢。一个Step需要3min，一共200个······
+
+准备睡一觉回来再看了qwq
