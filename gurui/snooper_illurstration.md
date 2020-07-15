@@ -37,7 +37,7 @@
 
       - `self.mask_tanh_tensor=K.variable(mask_tanh)` 返回一个K变量实例，包含keras meta data.
 
-      - `mask_tensor_unrepeat=`$\frac{K.tanh(self.mask_tanh_tensor)}{2-\epsilon}+0.5$ 这个东西的`shape`是(32,32,1)
+      - `mask_tensor_unrepeat=`$\frac{K.tanh(self.mask\_tanh\_tensor)}{2-\epsilon}+0.5$ 这个东西的`shape`是(32,32,1)
 
       - `mask_tensor_unexpand=K.repeat_elements(mask_tensor_unrepeat, rep=3, axis=2)` 把`unrepeat`重复三次变成`unexpand`, 这个东西的`shape`是（32，32，3）
 
