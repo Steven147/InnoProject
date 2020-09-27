@@ -1,0 +1,20 @@
+# 做一个GUI展示用
+
+1. 功能内核：直接fork我上传的demo代码https://github.com/RidiculousDoge/AIPDC.git
+2. 功能清单
+   1. 进行前向注入后门攻击，图形化选择参数（poison-type,poison-loc,poison-size)，可以在gui界面上进行训练。
+   2. 读取模型(.hdf5文件)，根据模型后缀显示当前前向攻击参数(poison-type,poison-loc,poison-size)
+   3. 读取完模型后，检查对于该模型是否已经产生过mask和pattern（检查backward_triggers目录下面的mask和trigger的后缀和模型的后缀是否匹配）。如果已经有则跳过，否则运行snooper.py生成对应的mask和pattern.
+   4. **最重要的功能：**
+      1. display：
+         1. 从dataset中读入一个正常图像img
+            1. display出该图像的图形和其真实的label；
+            2. 将该图形输入模型，得到一个原本的预测值，与真实值比较。
+            3. 叠加上反向triggers以后display出该图像的图形img’，输入模型进行预测，输出预测值。
+         2. 从dataset中读入一个被污染的图像poison_img。（被污染的列表在导入数据集的时候已经在gtsrb_dataset类中进行了保存(self.test_poisoned_img_index)
+            1. display出该图像的图形和dataset中自带的label
+            2. 将图像输入模型，得到一个预测值。
+            3. 叠加上反向triggers以后display出该图像的图形poison_img’，输入模型进行预测，输出预测值。
+   5. 在gui界面上进行数据清洗和模型重训练。(data_clean.py)
+   6. 评估重训练的模型：(eval_clean.py)
+3. 可能还需要加入可视化卷积层的内容。
