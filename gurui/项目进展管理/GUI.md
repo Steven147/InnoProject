@@ -1,6 +1,6 @@
 # 做一个GUI展示用
 
-1. 功能内核：直接fork我上传的demo代码https://github.com/RidiculousDoge/AIPDC.git
+1. 功能内核：直接fork我上传的demo代码https://github.com/RidiculousDoge/AIPDC.git，根据README的功能模块对应功能清单的各功能。
 2. 功能清单
    1. 进行前向注入后门攻击，图形化选择参数（poison-type,poison-loc,poison-size)，可以在gui界面上进行训练。
    2. 读取模型(.hdf5文件)，根据模型后缀显示当前前向攻击参数(poison-type,poison-loc,poison-size)
