@@ -1,0 +1,602 @@
+%0 
+%0 Journal Article
+%A Lecun, Y.; Bottou, L.; Bengio, Y. & Haffner, P.
+%D 1998
+%T Gradient-based learning applied to document recognition
+%E 
+%B Proceedings of the IEEE
+%C 
+%I 
+%V 86
+%6
+%N 11
+%P 2278-2324
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F 726791
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Pasquini, Cecilia & Böhme, Rainer
+%D 2020
+%T Trembling triggers: exploring the sensitivity of backdoors in DNN-based face recognition
+%E 
+%B EURASIP Journal on Information Security
+%C 
+%I 
+%V 2020
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 12
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F article
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Li, Shaofeng; Zhao, Benjamin; Yu, Jiahao; Xue, Minhui; Kaafar, Dali & Zhu, Haojin
+%D 2019
+%T Invisible Backdoor Attacks Against Deep Neural Networks
+%E 
+%B 
+%C 
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 09
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F article
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Liu, Kang; Dolan-,Gavitt, Brendan & Garg, Siddharth
+%D 2018
+%T Fine-Pruning: Defending Against Backdooring Attacks on Deep Neural Networks
+%E 
+%B CoRR
+%C 
+%I 
+%V abs/1805.12185
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F DBLP:journals/corr/abs-1805-12185
+%K 
+%X 
+%Z 
+%U http://arxiv.org/abs/1805.12185
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Chen, Bryant; Carvalho, Wilka; Baracaldo, Nathalie; Ludwig, Heiko; Edwards, Benjamin; Lee, Taesung; Molloy, Ian & Srivastava, Biplav
+%D 2018
+%T Detecting Backdoor Attacks on Deep Neural Networks by Activation Clustering
+%E 
+%B CoRR
+%C 
+%I 
+%V abs/1811.03728
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F DBLP:journals/corr/abs-1811-03728
+%K 
+%X 
+%Z 
+%U http://arxiv.org/abs/1811.03728
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Selvaraju, Ramprasaath R.; Das, Abhishek; Vedantam, Ramakrishna; Cogswell, Michael; Parikh, Devi & Batra, Dhruv
+%D 2016
+%T Grad-CAM: Why did you say that? Visual Explanations from Deep Networks via Gradient-based Localization
+%E 
+%B CoRR
+%C 
+%I 
+%V abs/1610.02391
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F DBLP:journals/corr/SelvarajuDVCPB16
+%K 
+%X 
+%Z 
+%U http://arxiv.org/abs/1610.02391
+
+%+
+%^
+
+%0 
+%0 Generic
+%A Gao, Yansong; Xu, Chang; Wang, Derui; Chen, Shiping; Ranasinghe, Damith C. & Nepal, Surya
+%D 2019
+%T STRIP: A Defence Against Trojan Attacks on Deep Neural Networks
+%E
+%B 
+%C
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 misc
+%4 
+%# 
+%$ 
+%F gao2019strip
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Generic
+%A Gu, Tianyu; Dolan-Gavitt, Brendan & Garg, Siddharth
+%D 2017
+%T BadNets: Identifying Vulnerabilities in the Machine Learning Model Supply Chain
+%E
+%B 
+%C
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 misc
+%4 
+%# 
+%$ 
+%F gu2017badnets
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Generic
+%A Guo, Wenbo; Wang, Lun; Xing, Xinyu; Du, Min & Song, Dawn
+%D 2019
+%T TABOR: A Highly Accurate Approach to Inspecting and Restoring Trojan Backdoors in AI Systems
+%E
+%B 
+%C
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 misc
+%4 
+%# 
+%$ 
+%F guo2019tabor
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Conference Proceedings
+%A Liu, Yingqi; Ma, Shiqing; Aafer, Yousra; Lee, Wen-Chuan; Zhai, Juan; Wang, Weihang & Zhang, Xiangyu
+%D 2018
+%T Trojaning Attack on Neural Networks
+%E 
+%B 
+%C 
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 01
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 inproceedings
+%4 
+%# 
+%$ 
+%F inproceedings
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Conference Proceedings
+%A Krizhevsky, Alex; Sutskever, Ilya & Hinton, Geoffrey E.
+%D 2012
+%T ImageNet Classification with Deep Convolutional Neural Networks
+%E 
+%B NIPS
+%C 
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 inproceedings
+%4 
+%# 
+%$ 
+%F Krizhevsky2012ImageNetCW
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Generic
+%A Simonyan, Karen & Zisserman, Andrew
+%D 2014
+%T Very Deep Convolutional Networks for Large-Scale Image Recognition
+%E
+%B 
+%C
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 misc
+%4 
+%# 
+%$ 
+%F simonyan2014deep
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Journal Article
+%A Wei, Xingxing; Liang, Siyuan; Chen, Ning & Cao, Xiaochun
+%D 2018
+%T Transferable Adversarial Attacks for Image and Video Object Detection
+%E 
+%B arXiv: Computer Vision and Pattern Recognition
+%C 
+%I 
+%V 
+%6
+%N 
+%P 
+%& 
+%Y 
+%S 
+%7
+%8 
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 article
+%4 
+%# 
+%$ 
+%F wei2018transferable
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
+%0 
+%0 Book
+%A Wang, Bolun; Yao, Yuanshun; Shan, Shawn; Li, Huiying; Viswanath, Bimal; Zheng, Haitao & Zhao, Ben
+%D 2019
+%T Neural Cleanse: Identifying and Mitigating Backdoor Attacks in Neural Networks
+%E 
+%B 
+%C 
+%I 
+%V 
+%6
+%N 
+%P 707-723
+%& 
+%Y 
+%S 
+%7 
+%8 May
+%9
+%? 
+%! 
+%Z 
+%@ 
+%(
+%)
+%*
+%L
+%M
+
+%2 
+%3 book
+%4 
+%# 
+%$ 
+%F 
+%K 
+%X 
+%Z 
+
+
+%+
+%^
+
